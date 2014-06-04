@@ -31,12 +31,12 @@ function error (transaction, err)
 $("#insert").bind ("click", function (event)
 {
     var datetimelog = $("#timestamp").val ();
-    datetimelog = datetimelog + ":00";
+    //datetimelog = datetimelog + ":00";
     var log = $("#loginput").val ();
 
     db.transaction (function (transaction)
     {
-        var sql = "INSERT INTO overtime (datetimelog, log) VALUES (?, ?)";
+        var sql = "INSERT INTO bloodsugar (datetimelog, log) VALUES (?, ?)";
         transaction.executeSql (sql, [datetimelog, log], function ()
         {
             alert ("Log inserted");

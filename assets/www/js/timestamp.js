@@ -26,5 +26,5 @@
         minutes = "0" + minutes;
     }
 
-    document.getElementById("timestamp").innerHTML = year + "-" + month + "-" + date + " " + hours + ":" + minutes;
+    document.getElementById("timestamp").innerHTML = year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds;
 
