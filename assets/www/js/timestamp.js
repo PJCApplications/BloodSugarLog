@@ -26,12 +26,5 @@
         minutes = "0" + minutes;
     }
 
-    var seconds = d.getSeconds();
-    if (seconds < 10)
-    {
-        seconds = "0" + seconds;
-    }
-
-
-    document.getElementById("timestamp").innerHTML = year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds;
+    document.getElementById("timestamp").innerHTML = year + "-" + month + "-" + date + " " + hours + ":" + minutes;
 
