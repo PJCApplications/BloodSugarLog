@@ -32,7 +32,6 @@ $("#insert").bind ("click", function (event)
 {
     alert ("Button clicked");
     var datetimelog = $("#timestamp").val ();
-    //datetimelog = datetimelog + ":00";
     var log = $("#loginput").val ();
 
     db.transaction (function (transaction)

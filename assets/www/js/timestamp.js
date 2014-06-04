@@ -33,5 +33,5 @@
     }
 
 
-    document.getElementById("timestamp").innerHTML = year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds;
+    document.getElementById("#timestamp").value = year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds;
 
