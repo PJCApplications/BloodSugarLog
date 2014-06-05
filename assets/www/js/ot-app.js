@@ -34,6 +34,92 @@ function onDeviceReady()
 
     timestamp();
 
+
+    var keypadoutput = "";
+
+
+    $("#Keypad_1").bind ("click", function (event)
+    {
+        keypadoutput = keypadoutput + "1";
+        keypadupdate();
+    });
+
+    $("#Keypad_2").bind ("click", function (event)
+    {
+        keypadoutput = keypadoutput + "2";
+        keypadupdate();
+    });
+
+    $("#Keypad_3").bind ("click", function (event)
+    {
+        keypadoutput = keypadoutput + "3";
+        keypadupdate();
+    });
+
+    $("#Keypad_4").bind ("click", function (event)
+    {
+        keypadoutput = keypadoutput + "4";
+        keypadupdate();
+    });
+
+    $("#Keypad_5").bind ("click", function (event)
+    {
+        keypadoutput = keypadoutput + "5";
+        keypadupdate();
+    });
+
+    $("#Keypad_6").bind ("click", function (event)
+    {
+        keypadoutput = keypadoutput + "6";
+        keypadupdate();
+    });
+
+    $("#Keypad_7").bind ("click", function (event)
+    {
+        keypadoutput = keypadoutput + "7";
+        keypadupdate();
+    });
+
+    $("#Keypad_8").bind ("click", function (event)
+    {
+        keypadoutput = keypadoutput + "8";
+        keypadupdate();
+    });
+
+    $("#Keypad_9").bind ("click", function (event)
+    {
+        keypadoutput = keypadoutput + "9";
+        keypadupdate();
+    });
+
+    $("#Keypad_0").bind ("click", function (event)
+    {
+        keypadoutput = keypadoutput + "0";
+        keypadupdate();
+    });
+
+    $("#Keypad_period").bind ("click", function (event)
+    {
+        keypadoutput = keypadoutput + ".";
+        keypadupdate();
+    });
+
+    $("#Keypad_backspace").bind ("click", function (event)
+    {
+        keypadoutput = keypadoutput.substring(0, keypadoutput.length - 1)
+        keypadupdate();
+    });
+
+
+    function keypadupdate()
+
+    {
+        document.getElementById("loginput").value = keypadoutput;
+        document.getElementById("loginput_p").innerHTML = keypadoutput;
+    }
+
+
+
 }
 
 function ok ()

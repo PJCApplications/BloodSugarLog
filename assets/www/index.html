@@ -20,7 +20,7 @@
         document.addEventListener("deviceready", onDeviceReady, false);
     </script>
     <script src="js/timestamp.js"></script>
-    <script src="js/keypad.js"></script>
+
 
 </head>
 <body>
@@ -28,14 +28,14 @@
       <div data-theme="a" data-role="header">
           <h3>
               Add Reading
+              <p id="timestamp_2" style="text-align: center; font-size: 24px;"></p>
           </h3>
       </div>
       <div data-role="content">
           <div data-role="fieldcontain" data-controltype="textinput">
-              <p id="timestamp_2" style="text-align: center;"></p>
               <input name="" id="timestamp" type="hidden">
-              <p id="loginput_p"></p>
-              <input name="loginput" id="loginput" type="text">
+              <p id="loginput_p" style="text-align: center; font-size: 60px;">??.?</p>
+              <input name="loginput" id="loginput" type="hidden">
           </div>
 
 
@@ -192,5 +192,7 @@
           </ul>
       </div>
   </div>
+  <script src="js/keypad.js"></script>
 </body>
 </html>
+
