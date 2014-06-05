@@ -36,4 +36,5 @@ var d = new Date();
 
 
     document.getElementById("timestamp").value = year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds;
+    document.getElementById("timestamp_2").innerHTML = date + "/" + month + "/" + year + " " + hours + ":" + minutes;
 }

@@ -2,7 +2,7 @@
 function onDeviceReady()
 {
     // Now safe to use the PhoneGap API
-    //alert ("Now safe to use the PhoneGap API");
+    alert ("Now safe to use the PhoneGap API");
     var db = openDatabase ("BSL", "1.0", "BSL", 65535);
 
     db.transaction (function (transaction)
@@ -13,7 +13,7 @@ function onDeviceReady()
     "bloodsugar VARCHAR(5))";
     transaction.executeSql (sql, undefined, function ()
     {
-    //alert ("Table 'bloodsugar' created");
+    alert ("Table 'bloodsugar' created");
     }, error);
     });
 
@@ -42,7 +42,7 @@ function ok ()
 
 function error (transaction, err)
     {
-        //alert ("DB error : " + err.message);
+        alert ("DB error : " + err.message);
         return false;
         }
 

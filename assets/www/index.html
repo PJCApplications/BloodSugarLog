@@ -20,6 +20,7 @@
         document.addEventListener("deviceready", onDeviceReady, false);
     </script>
     <script src="js/timestamp.js"></script>
+    <script src="js/keypad.js"></script>
 
 </head>
 <body>
@@ -31,73 +32,26 @@
       </div>
       <div data-role="content">
           <div data-role="fieldcontain" data-controltype="textinput">
-              <input name="" id="textinput2" placeholder="" value="" type="number">
+              <p id="timestamp_2" style="text-align: center;"></p>
+              <input name="" id="timestamp" type="hidden">
+              <p id="loginput_p"></p>
+              <input name="loginput" id="loginput" type="text">
           </div>
-          <div style="display: inline" data-controltype="image">
-              <a href=# id="insert">
-                <img style="width: 32.4%; height: 100%" src="img/button_1.gif">
-              </a>
-          </div>
-          <div style="display: inline" data-controltype="image">
-              <a href=# id="insert">
-              <img style="width: 32.4%; height: 100%" src="img/button_2.gif">
-              </a>
-          </div>
-          <div style="display: inline" data-controltype="image">
-              <a href=# id="insert">
-              <img style="width: 32.4%; height: 100%" src="img/button_3.gif">
-              </a>
-          </div>
-          <div style="display: inline" data-controltype="image">
-              <a href=# id="insert">
-              <img style="width: 32.4%; height: 100%" src="img/button_4.gif">
-              </a>
-          </div>
-          <div style="display: inline" data-controltype="image">
-              <a href=# id="insert">
-              <img style="width: 32.4%; height: 100%" src="img/button_5.gif">
-              </a>
-          </div>
-          <div style="display: inline" data-controltype="image">
-              <a href=# id="insert">
-              <img style="width: 32.4%; height: 100%" src="img/button_6.gif">
-              </a>
-          </div>
-          <div style="display: inline" data-controltype="image">
-              <a href=# id="insert">
-              <img style="width: 32.4%; height: 100%" src="img/button_7.gif">
-              </a>
-          </div>
-          <div style="display: inline" data-controltype="image">
-              <a href=# id="insert">
-              <img style="width: 32.4%; height: 100%" src="img/button_8.gif">
-              </a>
-          </div>
-          <div style="display: inline" data-controltype="image">
-              <a href=# id="insert">
-              <img style="width: 32.4%; height: 100%" src="img/button_9.gif">
-              </a>
-          </div>
-          <div style="display: inline" data-controltype="image">
-              <a href=# id="insert">
-              <img style="width: 32.4%; height: 100%" src="img/button_period.gif">
-              </a>
-          </div>
-          <div style="display: inline" data-controltype="image">
-              <a href=# id="insert">
-              <img style="width: 32.4%; height: 100%" src="img/button_0.gif">
-              </a>
-          </div>
-          <div style="display: inline" data-controltype="image">
-              <a href=# id="insert">
-              <img style="width: 32.4%; height: 100%" src="img/button_backspace.gif">
-              </a>
-          </div>
-          <div style="display: inline text-align:center" data-controltype="image">
-              <a href=# id="insert">
-              <img style="width: 99%; height: 100%" src="img/button_enter.gif">
-              </a>
-          </div>
+
+
+          <div style="display: inline" data-controltype="image"><a href=# id="Keypad_1"><img style="width: 32.6%; height: 100%" src="img/button_1.gif"></a></div>
+          <div style="display: inline" data-controltype="image"><a href=# id="Keypad_2"><img style="width: 32.6%; height: 100%" src="img/button_2.gif"></a></div>
+          <div style="display: inline" data-controltype="image"><a href=# id="Keypad_3"><img style="width: 32.6%; height: 100%" src="img/button_3.gif"></a></div>
+          <div style="display: inline" data-controltype="image"><a href=# id="Keypad_4"><img style="width: 32.6%; height: 100%" src="img/button_4.gif"></a></div>
+          <div style="display: inline" data-controltype="image"><a href=# id="Keypad_5"><img style="width: 32.6%; height: 100%" src="img/button_5.gif"></a></div>
+          <div style="display: inline" data-controltype="image"><a href=# id="Keypad_6"><img style="width: 32.6%; height: 100%" src="img/button_6.gif"></a></div>
+          <div style="display: inline" data-controltype="image"><a href=# id="Keypad_7"><img style="width: 32.6%; height: 100%" src="img/button_7.gif"></a></div>
+          <div style="display: inline" data-controltype="image"><a href=# id="Keypad_8"><img style="width: 32.6%; height: 100%" src="img/button_8.gif"></a></div>
+          <div style="display: inline" data-controltype="image"><a href=# id="Keypad_9"><img style="width: 32.6%; height: 100%" src="img/button_9.gif"></a></div>
+          <div style="display: inline" data-controltype="image"><a href=# id="Keypad_period"><img style="width: 32.6%; height: 100%" src="img/button_period.gif"></a></div>
+          <div style="display: inline" data-controltype="image"><a href=# id="Keypad_0"><img style="width: 32.6%; height: 100%" src="img/button_0.gif"></a></div>
+          <div style="display: inline" data-controltype="image"><a href=# id="Keypad_backspace"><img style="width: 32.6%; height: 100%" src="img/button_backspace.gif"></a></div>
+          <div style="display: inline text-align:center" data-controltype="image"><a href=# id="insert"><img style="width: 99.5%; height: 100%" src="img/button_enter.gif"></a></div>
       </div>
       <div data-role="tabbar" data-iconpos="top" data-theme="a">
           <ul>
