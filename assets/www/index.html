@@ -20,96 +20,111 @@
         document.addEventListener("deviceready", onDeviceReady, false);
     </script>
     <script src="js/timestamp.js"></script>
+
 </head>
-
-
 <body>
-<!------------------------------------------------------------------------------------------------------------->
-<!-- Add Log Page --------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------->
-  <div data-role="page" data-control-title="AddLog" id="AddLog">
+  <div data-role="page" data-control-title="AddLog" id="AddOT">
       <div data-theme="a" data-role="header">
           <h3>
               Add Reading
           </h3>
       </div>
       <div data-role="content">
-
           <div data-role="fieldcontain" data-controltype="textinput">
-              <input name="" id="timestamp" type="hidden">
-              <label for="loginput">
-                  Enter Reading:
-              </label>
-              <input name="loginput" id="loginput" type="text">
-              <!--<a href=# data-role=button id="insert"> Add to log </a>-->
+              <input name="" id="textinput2" placeholder="" value="" type="number">
+          </div>
+          <div style="display: inline" data-controltype="image">
+              <a href=# id="insert">
+                <img style="width: 32.4%; height: 100%" src="img/button_1.gif">
+              </a>
+          </div>
+          <div style="display: inline" data-controltype="image">
+              <a href=# id="insert">
+              <img style="width: 32.4%; height: 100%" src="img/button_2.gif">
+              </a>
+          </div>
+          <div style="display: inline" data-controltype="image">
+              <a href=# id="insert">
+              <img style="width: 32.4%; height: 100%" src="img/button_3.gif">
+              </a>
+          </div>
+          <div style="display: inline" data-controltype="image">
+              <a href=# id="insert">
+              <img style="width: 32.4%; height: 100%" src="img/button_4.gif">
+              </a>
+          </div>
+          <div style="display: inline" data-controltype="image">
+              <a href=# id="insert">
+              <img style="width: 32.4%; height: 100%" src="img/button_5.gif">
+              </a>
+          </div>
+          <div style="display: inline" data-controltype="image">
+              <a href=# id="insert">
+              <img style="width: 32.4%; height: 100%" src="img/button_6.gif">
+              </a>
+          </div>
+          <div style="display: inline" data-controltype="image">
+              <a href=# id="insert">
+              <img style="width: 32.4%; height: 100%" src="img/button_7.gif">
+              </a>
+          </div>
+          <div style="display: inline" data-controltype="image">
+              <a href=# id="insert">
+              <img style="width: 32.4%; height: 100%" src="img/button_8.gif">
+              </a>
+          </div>
+          <div style="display: inline" data-controltype="image">
+              <a href=# id="insert">
+              <img style="width: 32.4%; height: 100%" src="img/button_9.gif">
+              </a>
+          </div>
+          <div style="display: inline" data-controltype="image">
+              <a href=# id="insert">
+              <img style="width: 32.4%; height: 100%" src="img/button_period.gif">
+              </a>
+          </div>
+          <div style="display: inline" data-controltype="image">
+              <a href=# id="insert">
+              <img style="width: 32.4%; height: 100%" src="img/button_0.gif">
+              </a>
+          </div>
+          <div style="display: inline" data-controltype="image">
+              <a href=# id="insert">
+              <img style="width: 32.4%; height: 100%" src="img/button_backspace.gif">
+              </a>
+          </div>
+          <div style="display: inline text-align:center" data-controltype="image">
+              <a href=# id="insert">
+              <img style="width: 99%; height: 100%" src="img/button_enter.gif">
+              </a>
           </div>
       </div>
-
-
-
-      <table border="0" cellpadding="0" cellspacing="0" width="100%"">
-          <tr>
-              <td><a href="#" id="insert"><img src="img/Button_1.gif" width="100%" height="50%" border="0" /></a></td>
-              <td><a href="#" id="insert"><img src="img/Button_2.gif" width="100%" height="50%" border="0" /></a></td>
-              <td><a href="#" id="insert"><img src="img/Button_3.gif" width="100%" height="50%" border="0" /></a></td>
-          </tr>
-          <tr>
-              <td><a href="#" id="insert"><img src="img/Button_4.gif" width="100%" height="50%" border="0" /></a></td>
-              <td><a href="#" id="insert"><img src="img/Button_5.gif" width="100%" height="50%" border="0" /></a></td>
-              <td><a href="#" id="insert"><img src="img/Button_6.gif" width="100%" height="50%" border="0" /></a></td>
-          </tr>
-          <tr>
-              <td><a href="#" id="insert"><img src="img/Button_7.gif" width="100%" height="50%" border="0" /></a></td>
-              <td><a href="#" id="insert"><img src="img/Button_8.gif" width="100%" height="50%" border="0" /></a></td>
-              <td><a href="#" id="insert"><img src="img/Button_9.gif" width="100%" height="50%" border="0" /></a></td>
-          </tr>
-          <tr>
-              <td><a href="#" id="insert"><img src="img/Button_Period.gif" width="100%" height="50%" border="0" /></a></td>
-              <td><a href="#" id="insert"><img src="img/Button_0.gif" width="100%" height="50%" border="0" /></a></td>
-              <td><a href="#" id="insert"><img src="img/Button_Backspace.gif" width="100%" height="50%" border="0" /></a></td>
-          </tr>
-          <tr>
-              <td colspan="3"><a href="#" id="insert"><img src="img/Button_Enter.gif" width="100%" height="50%" border="0" /></a></td>
-          </tr>
-
-      </table>
-
-
-      <!-- Footer ----------------------------------------------------------------------------------->
       <div data-role="tabbar" data-iconpos="top" data-theme="a">
           <ul>
               <li>
-                  <a href="#AddLog" data-theme="" data-icon="plus">
+                  <a href="#AddOT" data-transition="none" data-theme="" data-icon="plus">
                       Add
                   </a>
               </li>
               <li>
-                  <a href="#ViewLog" data-theme="" data-icon="bars">
+                  <a href="#EditOT" data-transition="none" data-theme="" data-icon="bars">
                       Log
                   </a>
               </li>
               <li>
-                  <a href="#ViewCharts" data-theme="" data-icon="grid">
+                  <a href="#ViewOT" data-transition="none" data-theme="" data-icon="grid">
                       Charts
                   </a>
               </li>
               <li>
-                  <a href="#ViewStats" data-theme="" data-icon="info">
+                  <a href="#page5" data-transition="none" data-theme="" data-icon="info">
                       Stats
                   </a>
               </li>
           </ul>
       </div>
-      <!-- /Footer ---------------------------------------------------------------------------------->
-
   </div>
-<!-- /Page ---------------------------------------------------------------------------------------------------->
-
-
-<!------------------------------------------------------------------------------------------------------------->
-<!-- View Log Page -------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------->
-  <div data-role="page" data-control-title="ViewLog" id="ViewLog">
+  <div data-role="page" data-control-title="ViewLog" id="EditOT">
       <div data-theme="a" data-role="header">
           <h3>
               View Log
@@ -122,42 +137,32 @@
               </b>
           </div>
       </div>
-
-      <!-- Footer ----------------------------------------------------------------------------------->
       <div data-role="tabbar" data-iconpos="top" data-theme="a">
           <ul>
               <li>
-                  <a href="#AddLog" data-theme="" data-icon="plus">
+                  <a href="#AddOT" data-transition="none" data-theme="" data-icon="plus">
                       Add
                   </a>
               </li>
               <li>
-                  <a href="#ViewLog" data-theme="" data-icon="bars">
+                  <a href="#EditOT" data-transition="none" data-theme="" data-icon="bars">
                       Log
                   </a>
               </li>
               <li>
-                  <a href="#ViewCharts" data-theme="" data-icon="grid">
+                  <a href="#ViewOT" data-transition="none" data-theme="" data-icon="grid">
                       Charts
                   </a>
               </li>
               <li>
-                  <a href="#ViewStats" data-theme="" data-icon="info">
+                  <a href="#page5" data-transition="none" data-theme="" data-icon="info">
                       Stats
                   </a>
               </li>
           </ul>
       </div>
-      <!-- /Footer ---------------------------------------------------------------------------------->
-
   </div>
-<!-- /Page ---------------------------------------------------------------------------------------------------->
-
-
-<!------------------------------------------------------------------------------------------------------------->
-<!-- View Charts Page ----------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------->
-  <div data-role="page" data-control-title="ViewCharts" id="ViewCharts">
+  <div data-role="page" data-control-title="ViewCharts" id="ViewOT">
       <div data-theme="a" data-role="header">
           <h3>
               View Charts
@@ -170,42 +175,32 @@
               </b>
           </div>
       </div>
-
-      <!-- Footer ----------------------------------------------------------------------------------->
       <div data-role="tabbar" data-iconpos="top" data-theme="a">
           <ul>
               <li>
-                  <a href="#AddLog" data-theme="" data-icon="plus">
+                  <a href="#AddOT" data-transition="none" data-theme="" data-icon="plus">
                       Add
                   </a>
               </li>
               <li>
-                  <a href="#ViewLog" data-theme="" data-icon="bars">
+                  <a href="#EditOT" data-transition="none" data-theme="" data-icon="bars">
                       Log
                   </a>
               </li>
               <li>
-                  <a href="#ViewCharts" data-theme="" data-icon="grid">
+                  <a href="#ViewOT" data-transition="none" data-theme="" data-icon="grid">
                       Charts
                   </a>
               </li>
               <li>
-                  <a href="#ViewStats" data-theme="" data-icon="info">
+                  <a href="#page5" data-transition="none" data-theme="" data-icon="info">
                       Stats
                   </a>
               </li>
           </ul>
       </div>
-      <!-- /Footer ---------------------------------------------------------------------------------->
-
   </div>
-<!-- /Page ---------------------------------------------------------------------------------------------------->
-
-
-<!------------------------------------------------------------------------------------------------------------->
-<!-- View Stats Page ------------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------------------------------->
-  <div data-role="page" data-control-title="ViewStats" id="ViewStats">
+  <div data-role="page" data-control-title="ViewStats" id="page5">
       <div data-theme="a" data-role="header">
           <h3>
               View Statistics
@@ -218,38 +213,30 @@
               </b>
           </div>
       </div>
-
-      <!-- Footer ----------------------------------------------------------------------------------->
       <div data-role="tabbar" data-iconpos="top" data-theme="a">
           <ul>
               <li>
-                  <a href="#AddLog" data-theme="" data-icon="plus">
+                  <a href="#AddOT" data-transition="none" data-theme="" data-icon="plus">
                       Add
                   </a>
               </li>
               <li>
-                  <a href="#ViewLog" data-theme="" data-icon="bars">
+                  <a href="#EditOT" data-transition="none" data-theme="" data-icon="bars">
                       Log
                   </a>
               </li>
               <li>
-                  <a href="#ViewCharts" data-theme="" data-icon="grid">
+                  <a href="#ViewOT" data-transition="none" data-theme="" data-icon="grid">
                       Charts
                   </a>
               </li>
               <li>
-                  <a href="#ViewStats" data-theme="" data-icon="info">
+                  <a href="#page5" data-transition="none" data-theme="" data-icon="info">
                       Stats
                   </a>
               </li>
           </ul>
       </div>
-      <!-- /Footer --------------------------------------------------------------------------------->
-
   </div>
-<!-- /Page ---------------------------------------------------------------------------------------------------->
-
 </body>
 </html>
-
-
