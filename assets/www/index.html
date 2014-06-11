@@ -24,7 +24,7 @@
 
 </head>
 <body>
-  <div data-role="page" data-control-title="AddLog" id="AddOT">
+  <div data-role="page" data-control-title="AddLog" id="AddLog">
       <div data-theme="a" data-role="header">
           <h3>
               Add Reading
@@ -33,10 +33,8 @@
       <div data-role="content">
           <div data-role="fieldcontain" data-controltype="textinput">
               <input name="" id="timestamp" type="hidden">
-              <label for="loginput">
-                  Enter Reading:
-              </label>
               <input name="loginput" id="loginput" type="number" style="text-align: center; font-size: 50px;">
+              <input type="button" id="loginputbutton" value="Add Reading" />
           </div>
       </div>
 
@@ -44,73 +42,71 @@
       <div data-role="tabbar" data-iconpos="top" data-theme="a">
           <ul>
               <li>
-                  <a href="#AddOT" data-transition="none" data-theme="" data-icon="plus">
+                  <a href="#AddLog" data-transition="none" data-theme="" data-icon="plus">
                       Add
                   </a>
               </li>
               <li>
-                  <a href="#EditOT" data-transition="none" data-theme="" data-icon="bars">
+                  <a href="#ViewLog" onclick="viewLog()" data-transition="none" data-theme="" data-icon="bars">
                       Log
                   </a>
               </li>
               <li>
-                  <a href="#ViewOT" data-transition="none" data-theme="" data-icon="grid">
+                  <a href="#ViewCharts" data-transition="none" data-theme="" data-icon="grid">
                       Charts
                   </a>
               </li>
               <li>
-                  <a href="#page5" data-transition="none" data-theme="" data-icon="info">
+                  <a href="#ViewStats" data-transition="none" data-theme="" data-icon="info">
                       Stats
                   </a>
               </li>
           </ul>
       </div>
   </div>
-  <div data-role="page" data-control-title="ViewLog" id="EditOT">
+  <div data-role="page" data-control-title="ViewLog" id="ViewLog">
       <div data-theme="a" data-role="header">
           <h3>
               View Log
           </h3>
       </div>
       <div data-role="content">
-          <div data-controltype="textblock">
-              <b>
-                  Enter content here...
-              </b>
-          </div>
+
       </div>
       <div data-role="tabbar" data-iconpos="top" data-theme="a">
           <ul>
               <li>
-                  <a href="#AddOT" data-transition="none" data-theme="" data-icon="plus">
+                  <a href="#AddLog" data-transition="none" data-theme="" data-icon="plus">
                       Add
                   </a>
               </li>
               <li>
-                  <a href="#EditOT" data-transition="none" data-theme="" data-icon="bars">
+                  <a href="#ViewLog" onclick="viewLog()" data-transition="none" data-theme="" data-icon="bars">
                       Log
                   </a>
               </li>
               <li>
-                  <a href="#ViewOT" data-transition="none" data-theme="" data-icon="grid">
+                  <a href="#ViewCharts" data-transition="none" data-theme="" data-icon="grid">
                       Charts
                   </a>
               </li>
               <li>
-                  <a href="#page5" data-transition="none" data-theme="" data-icon="info">
+                  <a href="#ViewStats" data-transition="none" data-theme="" data-icon="info">
                       Stats
                   </a>
               </li>
           </ul>
       </div>
   </div>
-  <div data-role="page" data-control-title="ViewCharts" id="ViewOT">
+  <div data-role="page" data-control-title="ViewCharts" id="ViewCharts">
       <div data-theme="a" data-role="header">
           <h3>
               View Charts
           </h3>
       </div>
       <div data-role="content">
+
+
           <div data-controltype="textblock">
               <b>
                   Enter content here...
@@ -120,29 +116,29 @@
       <div data-role="tabbar" data-iconpos="top" data-theme="a">
           <ul>
               <li>
-                  <a href="#AddOT" data-transition="none" data-theme="" data-icon="plus">
+                  <a href="#AddLog" data-transition="none" data-theme="" data-icon="plus">
                       Add
                   </a>
               </li>
               <li>
-                  <a href="#EditOT" data-transition="none" data-theme="" data-icon="bars">
+                  <a href="#ViewLog" onclick="viewLog()" data-transition="none" data-theme="" data-icon="bars">
                       Log
                   </a>
               </li>
               <li>
-                  <a href="#ViewOT" data-transition="none" data-theme="" data-icon="grid">
+                  <a href="#ViewCharts" data-transition="none" data-theme="" data-icon="grid">
                       Charts
                   </a>
               </li>
               <li>
-                  <a href="#page5" data-transition="none" data-theme="" data-icon="info">
+                  <a href="#ViewStats" data-transition="none" data-theme="" data-icon="info">
                       Stats
                   </a>
               </li>
           </ul>
       </div>
   </div>
-  <div data-role="page" data-control-title="ViewStats" id="page5">
+  <div data-role="page" data-control-title="ViewStats" id="ViewStats">
       <div data-theme="a" data-role="header">
           <h3>
               View Statistics
@@ -158,29 +154,28 @@
       <div data-role="tabbar" data-iconpos="top" data-theme="a">
           <ul>
               <li>
-                  <a href="#AddOT" data-transition="none" data-theme="" data-icon="plus">
+                  <a href="#AddLog" data-transition="none" data-theme="" data-icon="plus">
                       Add
                   </a>
               </li>
               <li>
-                  <a href="#EditOT" data-transition="none" data-theme="" data-icon="bars">
+                  <a href="#ViewLog" onclick="viewLog()" data-transition="none" data-theme="" data-icon="bars">
                       Log
                   </a>
               </li>
               <li>
-                  <a href="#ViewOT" data-transition="none" data-theme="" data-icon="grid">
+                  <a href="#ViewCharts" data-transition="none" data-theme="" data-icon="grid">
                       Charts
                   </a>
               </li>
               <li>
-                  <a href="#page5" data-transition="none" data-theme="" data-icon="info">
+                  <a href="#ViewStats" data-transition="none" data-theme="" data-icon="info">
                       Stats
                   </a>
               </li>
           </ul>
       </div>
   </div>
-  <script src="js/keypad.js"></script>
 </body>
 </html>
 

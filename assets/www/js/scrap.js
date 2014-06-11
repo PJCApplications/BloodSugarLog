@@ -6,7 +6,7 @@
 //Comment...................................................................................................
 
 
-/*$("#remove").bind ("click", function (event)
+$("#remove").bind ("click", function (event)
  {
  if (!confirm ("Delete table?", "")) return;;
  db.transaction (function (transaction)
@@ -16,20 +16,11 @@
  });
  });
 
- $("#insert").bind ("click", function (event)
- {
- var datetimelog = $("#timestamp").val ();
- var log = $("#loginput").val ();
 
- db.transaction (function (transaction)
- {
- var sql = "INSERT INTO overtime (datetimelog, log) VALUES (?, ?)";
- transaction.executeSql (sql, [datetimelog, log], function ()
- {
- alert ("Log inserted");
- }, error);
- });
- });
+function viewlog()
+{
+
+}
 
  $("#list").bind ("click", function (event)
  {
@@ -47,12 +38,12 @@
  var row = result.rows.item (i);
  var id = row.id;
  var datetimelog = row.datetimelog;
- var log = row.log;
+ var bloodsugar = row.bloodsugar;
 
  html += "<li>" +
  id + "&nbsp;" +
  datetimelog + "&nbsp;" +
- log + "&nbsp;" +
+ bloodsugar + "&nbsp;" +
  "</li>";
  }
  }
@@ -63,19 +54,19 @@
 
  html += "</ul>";
 
- $("#win2").unbind ().bind ("pagebeforeshow", function ()
+ $("#ViewLog").unbind ().bind ("pagebeforeshow", function ()
  {
- var $content = $("#win2 div:jqmData(role=content)");
+ var $content = $("#ViewLog div:jqmData(role=content)");
  $content.html (html);
  var $ul = $content.find ("ul");
  $ul.listview ();
  });
 
- $.mobile.changePage ($("#win2"));
+ $.mobile.changePage ($("#ViewLog"));
 
  }, error);
  });
- });*/
+ });
 
 
 
