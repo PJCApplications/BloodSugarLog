@@ -28,6 +28,7 @@ function onDeviceReady()
             transaction.executeSql (sql, [datetimelog, bloodsugar], function ()
             {
                 alert ("Log inserted");
+                document.getElementById('loginput').innerHTML="";
             }, error);
         });
 
