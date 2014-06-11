@@ -1,6 +1,7 @@
 
 function onDeviceReady()
 {
+    timestamp();
     // Now safe to use the PhoneGap API
     var db = openDatabase ("BSL", "1.0", "BSL", 65535);
 
@@ -17,6 +18,7 @@ function onDeviceReady()
 
     $("#loginputbutton").bind ("click", function (event)
     {
+        timestamp();
         var datetimelog = $("#timestamp").val ();
         var bloodsugar = $("#loginput").val ();
 
@@ -31,7 +33,7 @@ function onDeviceReady()
 
     });
 
-    timestamp();
+
 }
 
 function ok ()
